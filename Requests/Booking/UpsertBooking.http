@@ -1,0 +1,8 @@
+@id = 00000000-0000-0000-0000-000000000000
+@bookingId = 00000000-0000-0000-0000-000000000000
+PUT http://localhost:5032/booking/{{id}}/{{bookingId}} 
+Content-Type: application/json
+
+{
+  "LastModifiedDateTime": "2022-04-08T08:00:00"
+} 

@@ -1,0 +1,9 @@
+POST http://localhost:5032/booking
+Content-Type: application/json
+
+{
+  "CreatedDateTime": "2022-04-08T08:00:00",
+  "InitialCost": 1234.3,
+  "Discount": 20.4,
+  "FinalCost": 1213.9
+}
