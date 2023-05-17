@@ -6,6 +6,55 @@
 
 #API Definition
 
+### Create Admin Request
+
+```js
+POST / ADMIN;
+```
+
+```JSON
+{
+    "Username"
+}
+```
+
+###Create User Request
+
+```js
+POST / USER;
+```
+
+```JSON
+{
+    "Username": "jayso",
+   "First Name" : "Jason",
+   "Last Name": "Asare",
+   "Email" : "test@gmail.com",
+   "Password" : "yfgfgf#257",
+    "Gender": "Male",
+    "Date of Birth": "2022-05-08T08:00:00",
+
+}
+```
+
+### Create User Response
+
+```yml
+Location: {{hosht}}/user
+```
+
+```JSON
+{
+    "Id": "00000000-0000-0000-0000-000000000000",
+    "First Name": "Jason",
+    "Last Name": "Asare",
+    "Email": "test@gmail.com",
+    "CreatedDateTime": "2022-04-08T08:00:00",
+
+
+}
+```
+
 ###Create Booking Request
 
 ```js
@@ -13,7 +62,7 @@ POST / Booking;
 ```
 
 ```yml
-Location: {{host}}/booking/{{id}}
+Location: {{host}}/booking
 ```
 
 ```JSON
@@ -37,13 +86,21 @@ Location: {{host}}/Booking/{{id}}
 ```json
     "departureDateTime": "2022-04-08T08:00:00",
     "arrivalDateTime": "2022-05-08T08:00:00"
-    "destination":
-    [
-        "Id": "00000000-0000-0000-0000-000000000000",
-        "Destination": "Accra",
-        "Country": "Ghana",
-        "Rating" : "4.7",
-        "Destination": " capital and largest city of Ghana, on the Gulf of Guinea (an arm of the Atlantic Ocean)..",
-        "BasePrice": "1253.21"
-    ]
+    "trip":
+    {
+        "origin": {
+            "Country": "Ghana",
+            "City": "Accra",
+            "GeneratedPrice": "1921.23"
+        },
+        "destination":
+        {
+            "Id": "00000000-0000-0000-0000-000000000000",
+            "Destination": "Accra",
+            "Country": "Ghana",
+            "Rating" : "4.7",
+            "Destination": " capital and largest city of Ghana, on the Gulf of Guinea (an arm of the Atlantic Ocean)..",
+            "BasePrice": "1253.21"
+        }
+    }
 ```
