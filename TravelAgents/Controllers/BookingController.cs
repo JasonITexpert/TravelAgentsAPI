@@ -19,7 +19,7 @@ public class BookingController : ControllerBase
         return Ok(id);
     }
 
-    [HttpPut("{id:guid}/{bookingId:guid}")]
+    [HttpPut("{id:guid}")]
     public IActionResult UpsertBooking(Guid id, Guid bookingId, UpsertBookingRequest request)
     {
         return Ok(request);

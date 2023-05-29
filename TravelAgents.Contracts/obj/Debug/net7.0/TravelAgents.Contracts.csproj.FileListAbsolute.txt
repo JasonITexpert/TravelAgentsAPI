@@ -10,3 +10,15 @@ C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\refint\TravelAgents.Contracts.dll
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.pdb
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\ref\TravelAgents.Contracts.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\bin\Debug\net7.0\TravelAgents.Contracts.deps.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\bin\Debug\net7.0\TravelAgents.Contracts.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\bin\Debug\net7.0\TravelAgents.Contracts.pdb
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.csproj.AssemblyReference.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.AssemblyInfoInputs.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.AssemblyInfo.cs
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\refint\TravelAgents.Contracts.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\TravelAgents.Contracts.pdb
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents.Contracts\obj\Debug\net7.0\ref\TravelAgents.Contracts.dll

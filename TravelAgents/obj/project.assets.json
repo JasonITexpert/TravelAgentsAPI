@@ -481,11 +481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents\\TravelAgents.csproj",
+      "projectUniqueName": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents\\TravelAgents.csproj",
       "projectName": "TravelAgents",
-      "projectPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents\\TravelAgents.csproj",
+      "projectPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents\\TravelAgents.csproj",
       "packagesPath": "C:\\Users\\Jason Asare\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents\\obj\\",
+      "outputPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jason Asare\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -502,8 +502,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj"
+            "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj"
             }
           }
         }

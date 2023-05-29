@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj",
       "projectName": "TravelAgents.Contracts",
-      "projectPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj",
+      "projectPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents.Contracts\\TravelAgents.Contracts.csproj",
       "packagesPath": "C:\\Users\\Jason Asare\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\ASP.net projects\\TravelAgents\\TravelAgents.Contracts\\obj\\",
+      "outputPath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jason Asare\\AppData\\Roaming\\NuGet\\NuGet.Config",

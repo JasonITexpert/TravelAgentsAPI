@@ -33,3 +33,38 @@ C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents\obj\Debug\net7.0\ref\TravelAgents.dll
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.Contracts.dll
 C:\Users\Jason Asare\Desktop\Projects\ASP.net projects\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.Contracts.pdb
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\appsettings.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.exe
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.deps.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.runtimeconfig.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.pdb
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.Contracts.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\TravelAgents.Contracts.pdb
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.csproj.AssemblyReference.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.AssemblyInfoInputs.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.AssemblyInfo.cs
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.csproj.CoreCompileInputs.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\staticwebassets\msbuild.TravelAgents.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\staticwebassets\msbuild.build.TravelAgents.props
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TravelAgents.props
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.TravelAgents.props
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\scopedcss\bundle\TravelAgents.styles.css
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.csproj.CopyComplete
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\refint\TravelAgents.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.pdb
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\TravelAgents.genruntimeconfig.cache
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\ref\TravelAgents.dll

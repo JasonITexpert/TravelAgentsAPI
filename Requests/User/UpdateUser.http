@@ -1,0 +1,11 @@
+@id = 00000000-0000-0000-0000-000000000000
+PUT http://localhost:5032/User/{{id}}
+Content-Type: application/json
+
+{
+  "FirstName": "Jason",
+  "LastName": "Asare",
+  "Age": "23",
+  "Username": "jayso",
+  "Email": "test@gmail.com"
+}

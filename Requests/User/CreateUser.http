@@ -1,0 +1,12 @@
+POST http://localhost:5032/User
+Content-Type: application/json
+
+{
+  "Username": "jayso",
+  "FirstName": "Jason",
+  "LastName": "Asare",
+  "Email": "test@gmail.com",
+  "Password": "yfgfgf#257",
+  "ConfirmPassword": "yfgfgf#257",
+  "Date of Birth": "2022-05-08T08:00:00"
+}

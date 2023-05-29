@@ -7,8 +7,12 @@ public class Booking
     public float InitialCost { get; }
     public float Discount { get; }
     public float FinalCost { get; }
+    public Origin Origin { get; }
+    public Guid OriginId { get; }
     public Destination Destination { get; }
     public Guid DestinationId { get; }
+    public float FinalPrice { get; set; }
+
     public Booking
     (
         Guid id,
@@ -16,8 +20,7 @@ public class Booking
         float initialCost,
         float discount,
         float finalCost,
-        Destination destination,
-        Guid destinationId
+        Trip Trip
     )
     {
         //enforce variants
@@ -26,7 +29,10 @@ public class Booking
         InitialCost = initialCost;
         Discount = discount;
         FinalCost = finalCost;
-        Destination = destination;
-        DestinationId = destinationId;
+        Origin = Trip.Origin;
+        OriginId = Trip.Origin.Id;
+        Destination = Trip.Destination;
+        DestinationId = Trip.Destination.Id;
+
     }
 }
