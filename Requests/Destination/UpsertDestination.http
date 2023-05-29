@@ -1,0 +1,10 @@
+@id = 00000000-0000-0000-0000-000000000000
+PUT http://localhost:5032/Destination/{{id}}
+Content-Type: application/json
+
+{
+    "Country": "Ghana",
+    "City": "Accra",
+    "Price": "1921.23",
+    "Description": " capital and largest city of Ghana, on the Gulf of Guinea (an arm of the Atlantic Ocean).."
+}

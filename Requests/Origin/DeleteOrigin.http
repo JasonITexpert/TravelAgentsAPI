@@ -1,1 +1,2 @@
-DELETE http://localhost:5032/Origin
+@id = 00000000-0000-0000-0000-000000000000
+DELETE http://localhost:5032/Origin/{{id}}

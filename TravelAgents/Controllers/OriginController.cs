@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TravelAgents.Contracts;
+using TravelAgents.Contracts.Origin;
 
 namespace TravelAgents.Controllers;
 
@@ -8,25 +9,25 @@ namespace TravelAgents.Controllers;
 public class OriginController : ControllerBase
 {
     [HttpPost]
-    public IActionResult CreateBooking(CreateBookingRequest request)
+    public IActionResult CreateOrigin(CreateOriginRequest request)
     {
         return Ok(request);
     }
 
     [HttpGet("{id:guid}")]
-    public IActionResult GetBooking(Guid id)
+    public IActionResult GetOrigin(Guid id)
     {
         return Ok(id);
     }
 
     [HttpPut("{id:guid}")]
-    public IActionResult UpsertBooking(Guid id, UpsertBookingRequest request)
+    public IActionResult UpsertOrigin(Guid id, UpsertOriginRequest request)
     {
         return Ok(request);
     }
 
     [HttpDelete("{id:guid}")]
-    public IActionResult DeleteBooking(Guid id)
+    public IActionResult DeleteOrigin(Guid id)
     {
         return NoContent();
     }

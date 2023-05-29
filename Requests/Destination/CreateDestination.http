@@ -1,0 +1,9 @@
+POST http://localhost:5032/Destination
+Content-Type: application/json
+
+{
+    "Country": "Ghana",
+    "City": "Accra",
+    "Price": "1921.23",
+    "Description": " capital and largest city of Ghana, on the Gulf of Guinea (an arm of the Atlantic Ocean).."
+}

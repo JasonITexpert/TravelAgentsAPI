@@ -41,8 +41,8 @@ Location: {{host}}/admin/{{id}}
 ```json
 {
   "Id": "00000000-0000-0000-0000-000000000000",
-  "First Name": "Jason",
-  "Last Name": "Asare",
+  "FirstName": "Jason",
+  "LastName": "Asare",
   "Age": "23",
   "Username": "jayso",
   "NormalizedUserName": "JAYSO",
@@ -50,7 +50,7 @@ Location: {{host}}/admin/{{id}}
   "NormalizedEmail": "TEST@GMAIL.COM",
   "EmailConfirmed": "TRUE",
   "PasswordHash": "feasfdasfadsfsaf22@@",
-  "PasswordSalt": ""
+  "PasswordSalt": "",
   "CreatedDateTime": "2022-04-08T08:00:00",
   "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
   "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",

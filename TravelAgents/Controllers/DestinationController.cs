@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using TravelAgents.Contracts.Destination;
 
 namespace TravelAgents.Controllers;
 
@@ -7,9 +8,9 @@ namespace TravelAgents.Controllers;
 public class DestinationController : ControllerBase
 {
     [HttpPost]
-    public IActionResult CreateDestination()
+    public IActionResult CreateDestination(CreateDestinationRequest request)
     {
-        return Ok();
+        return Ok(request);
     }
 
     [HttpGet("{id:guid}")]
@@ -19,14 +20,14 @@ public class DestinationController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
-    public IActionResult UpsertDestination(Guid id)
+    public IActionResult UpsertDestination(Guid id, UpsertDestinationRequest request)
     {
-        return Ok();
+        return Ok(request);
     }
 
     [HttpDelete("{id:guid}")]
     public IActionResult DeleteDestination(Guid id)
     {
-        return Ok(id);
+        return NoContent();
     }
 }
