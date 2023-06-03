@@ -1,2 +1,3 @@
+@host = http://localhost:5032
 @id = 00000000-0000-0000-0000-000000000000
-GET http://localhost:5032/Origin/{{id}}
+GET {{host}}/Origin/{{id}}

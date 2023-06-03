@@ -1,5 +1,11 @@
 namespace TravelAgents.Contracts;
 
 public record UpsertBookingRequest(
-    DateTime LastModifiedDateTime
+    float InitialCost,
+    float Discount,
+    float FinalCost,
+    Guid OriginId,
+    Guid DestinationId,
+    DateTime DepartureDateTime,
+    DateTime ArrivalDateTime
 );

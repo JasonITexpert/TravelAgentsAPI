@@ -1,8 +1,8 @@
-POST http://localhost:5032/Origin
+@host = http://localhost:5032
+POST {{host}}/Origin
 Content-Type: application/json
 
 {
-  "Id": "00000000-0000-0000-0000-000000000000",
   "Country": "Ghana",
   "City": "Accra",
   "Price": 1921.23

@@ -2,10 +2,27 @@ namespace TravelAgents.Models;
 
 public class Origin
 {
-    public Guid Id { get; set; }
-    public string Country { get; set; }
-    public string City { get; set; }
-    public float Price { get; set; }
-    public DateTime CreatedDateTime { get; set; }
-    public DateTime LastModifiedDateTime { get; set; }
+    public Guid Id { get; }
+    public string Country { get; }
+    public string City { get; }
+    public float Price { get; }
+    public DateTime CreatedDateTime { get; }
+    public DateTime LastModifiedDateTime { get; }
+    public Origin(
+        Guid id,
+        string country,
+        string city,
+        float price,
+        DateTime createdDateTime,
+        DateTime lastModifiedDateTime
+    )
+    {
+        //enforce variants
+        Id = id;
+        Country = country;
+        City = city;
+        Price = price;
+        CreatedDateTime = createdDateTime;
+        LastModifiedDateTime = lastModifiedDateTime;
+    }
 }

@@ -6,6 +6,79 @@
 
 #API Definition
 
+## Authentication
+
+### Register User
+
+```js
+POST {{host}}/auth/register;
+```
+
+```json
+{
+  "Username": "",
+  "FirstName": "",
+  "LastName": "",
+  "Email": "test@gmail.com",
+  "Password": "yfgfgf#257",
+  "Date of Birth": "2022-05-08T08:00:00"
+}
+```
+
+### Register Response
+
+```js
+201 Created
+```
+
+```json
+{
+  "Id": "00000000-0000-0000-0000-000000000000",
+  "First Name": "Jason",
+  "Last Name": "Asare",
+  "Age": "23",
+  "Username": "jayso"
+  // "Email": "test@gmail.com",
+  // "NormalizedUserName": "JAYSO",
+  // "NormalizedEmail": "TEST@GMAIL.COM",
+  // "EmailConfirmed": "FALSE",
+  // "CreatedDateTime": "2022-04-08T08:00:00",
+  // "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
+  // "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
+  // "PhoneNumber": "321321321312",
+  // "PhoneNumberConfirmed": "FALSE",
+  // "TwoFactorEnabled": "FALSE",
+  // "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
+  // "LockoutEnabled": "FALSE",
+  // "AccessFailedCount": "0"
+}
+```
+
+### Login Request
+
+```js
+POST {{host}}/auth/login
+```
+
+```json
+{
+  "Username": "User",
+  "Password": "newpass"
+}
+```
+
+### Login Response
+
+```json
+{
+  "Id": "00000000-0000-0000-0000-000000000000",
+  "Username": "User",
+  "FirstName": "John",
+  "LastName": "Lincoln",
+  "Email": "test@gmail.com"
+}
+```
+
 ### Create Admin Request
 
 ```csharp
@@ -23,7 +96,6 @@ POST / admin;
   "LastName": "",
   "Email": "test@gmail.com",
   "Password": "yfgfgf#257",
-  "ConfirmPassword": "yfgfgf#257",
   "Date of Birth": "2022-05-08T08:00:00"
 }
 ```
@@ -45,21 +117,19 @@ Location: {{host}}/admin/{{id}}
   "LastName": "Asare",
   "Age": "23",
   "Username": "jayso",
-  "NormalizedUserName": "JAYSO",
-  "Email": "test@gmail.com",
-  "NormalizedEmail": "TEST@GMAIL.COM",
-  "EmailConfirmed": "TRUE",
-  "PasswordHash": "feasfdasfadsfsaf22@@",
-  "PasswordSalt": "",
-  "CreatedDateTime": "2022-04-08T08:00:00",
-  "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
-  "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
-  "PhoneNumber": "321321321312",
-  "PhoneNumberConfirmed": "FALSE",
-  "TwoFactorEnabled": "FALSE",
-  "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
-  "LockoutEnabled": "FALSE",
-  "AccessFailedCount": "0"
+  "Email": "test@gmail.com"
+  // "NormalizedUserName": "JAYSO",
+  // "NormalizedEmail": "TEST@GMAIL.COM",
+  // "EmailConfirmed": "TRUE",
+  // "CreatedDateTime": "2022-04-08T08:00:00",
+  // "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
+  // "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
+  // "PhoneNumber": "321321321312",
+  // "PhoneNumberConfirmed": "FALSE",
+  // "TwoFactorEnabled": "FALSE",
+  // "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
+  // "LockoutEnabled": "FALSE",
+  // "AccessFailedCount": "0"
 }
 ```
 
@@ -88,49 +158,21 @@ GET admin/{{id}}
   "LastName": "Asare",
   "Age": "23",
   "Username": "jayso",
-  "NormalizedUserName": "JAYSO",
-  "Email": "test@gmail.com",
-  "NormalizedEmail": "TEST@GMAIL.COM",
-  "EmailConfirmed": "TRUE",
-  "PasswordHash": "feasfdasfadsfsaf22@@",
-  "CreatedDateTime": "2022-04-08T08:00:00",
-  "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
-  "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
-  "PhoneNumber": "321321321312",
-  "PhoneNumberConfirmed": "FALSE",
-  "TwoFactorEnabled": "FALSE",
-  "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
-  "LockoutEnabled": "FALSE",
-  "AccessFailedCount": "0"
+  "Email": "test@gmail.com"
+  // "NormalizedUserName": "JAYSO",
+  // "NormalizedEmail": "TEST@GMAIL.COM",
+  // "EmailConfirmed": "TRUE",
+  // "PasswordHash": "feasfdasfadsfsaf22@@",
+  // "CreatedDateTime": "2022-04-08T08:00:00",
+  // "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
+  // "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
+  // "PhoneNumber": "321321321312",
+  // "PhoneNumberConfirmed": "FALSE",
+  // "TwoFactorEnabled": "FALSE",
+  // "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
+  // "LockoutEnabled": "FALSE",
+  // "AccessFailedCount": "0"
 }
-```
-
-###Create User Request
-
-```js
-POST / USER;
-```
-
-```json
-{
-  "Username": "jayso",
-  "FirstName": "Jason",
-  "LastName": "Asare",
-  "Email": "test@gmail.com",
-  "Password": "yfgfgf#257",
-  "ConfirmPassword": "yfgfgf#257",
-  "Date of Birth": "2022-05-08T08:00:00"
-}
-```
-
-### Created User Response
-
-```js
-201 Created
-```
-
-```yml
-Location: {{host}}/users/{{id}}
 ```
 
 ```json
@@ -138,22 +180,24 @@ Location: {{host}}/users/{{id}}
   "Id": "00000000-0000-0000-0000-000000000000",
   "First Name": "Jason",
   "Last Name": "Asare",
-  "Age": "23",
-  "Username": "jayso",
-  "NormalizedUserName": "JAYSO",
   "Email": "test@gmail.com",
-  "NormalizedEmail": "TEST@GMAIL.COM",
-  "EmailConfirmed": "TRUE",
-  "PasswordHash": "feasfdasfadsfsaf22@@",
-  "CreatedDateTime": "2022-04-08T08:00:00",
-  "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
-  "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
-  "PhoneNumber": "321321321312",
-  "PhoneNumberConfirmed": "FALSE",
-  "TwoFactorEnabled": "FALSE",
-  "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
-  "LockoutEnabled": "FALSE",
-  "AccessFailedCount": "0"
+  "Age": "23",
+  "Username": "jayso"
+
+  // "NormalizedUserName": "JAYSO",
+  // "Email": "test@gmail.com",
+  // "NormalizedEmail": "TEST@GMAIL.COM",
+  // "EmailConfirmed": "TRUE",
+  // "PasswordHash": "feasfdasfadsfsaf22@@",
+  // "CreatedDateTime": "2022-04-08T08:00:00",
+  // "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
+  // "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
+  // "PhoneNumber": "321321321312",
+  // "PhoneNumberConfirmed": "FALSE",
+  // "TwoFactorEnabled": "FALSE",
+  // "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
+  // "LockoutEnabled": "FALSE",
+  // "AccessFailedCount": "0"
 }
 ```
 
@@ -162,7 +206,7 @@ Location: {{host}}/users/{{id}}
 ### Get User Request
 
 ```csharp
-[Authorize(Role = "User")]
+[Authorize(Role = "Admin")]
 ```
 
 ```js
@@ -182,20 +226,21 @@ GET users/{{id}}
   "Last Name": "Asare",
   "Age": "23",
   "Username": "jayso",
-  "NormalizedUserName": "JAYSO",
-  "Email": "test@gmail.com",
-  "NormalizedEmail": "TEST@GMAIL.COM",
-  "EmailConfirmed": "TRUE",
-  "PasswordHash": "feasfdasfadsfsaf22@@",
-  "CreatedDateTime": "2022-04-08T08:00:00",
-  "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
-  "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
-  "PhoneNumber": "321321321312",
-  "PhoneNumberConfirmed": "FALSE",
-  "TwoFactorEnabled": "FALSE",
-  "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
-  "LockoutEnabled": "FALSE",
-  "AccessFailedCount": "0"
+  "Email": "test@gmail.com"
+  // "NormalizedUserName": "JAYSO",
+  // "Email": "test@gmail.com",
+  // "NormalizedEmail": "TEST@GMAIL.COM",
+  // "EmailConfirmed": "TRUE",
+  // "PasswordHash": "feasfdasfadsfsaf22@@",
+  // "CreatedDateTime": "2022-04-08T08:00:00",
+  // "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
+  // "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
+  // "PhoneNumber": "321321321312",
+  // "PhoneNumberConfirmed": "FALSE",
+  // "TwoFactorEnabled": "FALSE",
+  // "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
+  // "LockoutEnabled": "FALSE",
+  // "AccessFailedCount": "0"
 }
 ```
 
@@ -234,20 +279,21 @@ PUT /users/{{id}}
   "Last Name": "Asare",
   "Age": "23",
   "Username": "jayso",
-  "NormalizedUserName": "JAYSO",
-  "Email": "test@gmail.com",
-  "NormalizedEmail": "TEST@GMAIL.COM",
-  "EmailConfirmed": "TRUE",
-  "PasswordHash": "feasfdasfadsfsaf22@@",
-  "CreatedDateTime": "2022-04-08T08:00:00",
-  "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
-  "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
-  "PhoneNumber": "321321321312",
-  "PhoneNumberConfirmed": "FALSE",
-  "TwoFactorEnabled": "FALSE",
-  "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
-  "LockoutEnabled": "FALSE",
-  "AccessFailedCount": "0"
+  "Email": "test@gmail.com"
+  // "NormalizedUserName": "JAYSO",
+  // "Email": "test@gmail.com",
+  // "NormalizedEmail": "TEST@GMAIL.COM",
+  // "EmailConfirmed": "TRUE",
+  // "PasswordHash": "feasfdasfadsfsaf22@@",
+  // "CreatedDateTime": "2022-04-08T08:00:00",
+  // "SecurityStamp": "asfdsafsadfdasfadsfadsfdsafdsafGAd@12322",
+  // "ConcurrencyStamp": "00000000-0000-0000-0000-000000000000",
+  // "PhoneNumber": "321321321312",
+  // "PhoneNumberConfirmed": "FALSE",
+  // "TwoFactorEnabled": "FALSE",
+  // "LockoutEnd": "5/1/2023 8:06:32 AM +01:00",
+  // "LockoutEnabled": "FALSE",
+  // "AccessFailedCount": "0"
 }
 ```
 

@@ -1,2 +1,3 @@
-@id = 00000000-0000-0000-0000-000000000000
-GET http://localhost:5032/booking/{{id}}
+@host = http://localhost:5032
+@id = 4d1dafcf-74ca-464e-85aa-5d4ebe79a651
+GET {{host}}/booking/{{id}}

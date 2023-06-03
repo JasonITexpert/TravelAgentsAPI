@@ -1,8 +1,9 @@
 namespace TravelAgents.Contracts.Destination;
 
 public record UpsertDestinationRequest(
-    string Country,
     string City,
-    float Price,
+    string Country,
+    float Rating,
+    float BasePrice,
     string Description
 );

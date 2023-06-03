@@ -1,4 +1,5 @@
-POST http://localhost:5032/Destination
+@host = http://localhost:5032
+POST {{host}}/Destination
 Content-Type: application/json
 
 {

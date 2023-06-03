@@ -1,10 +1,11 @@
-@id = 00000000-0000-0000-0000-000000000000
-PUT http://localhost:5032/Destination/{{id}}
+@host = http://localhost:5032
+@id = ab4cf22a-536b-4847-927c-44a8ee55ed8b
+PUT {{host}}/Destination/{{id}}
 Content-Type: application/json
 
 {
+    "City": "Tema",
     "Country": "Ghana",
-    "City": "Accra",
     "Price": "1921.23",
     "Description": " capital and largest city of Ghana, on the Gulf of Guinea (an arm of the Atlantic Ocean).."
 }

@@ -3,8 +3,8 @@ namespace TravelAgents.Contracts.Destination;
 public record DestinationResponse(
     Guid Id,
     string City,
-    string County,
+    string Country,
     float Rating,
-    string Destination,
+    string Description,
     float BasePrice
 );

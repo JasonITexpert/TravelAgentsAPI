@@ -3,36 +3,42 @@ namespace TravelAgents.Models;
 public class Booking
 {
     public Guid Id { get; }
-    public DateTime CreatedDateTime { get; }
     public float InitialCost { get; }
     public float Discount { get; }
     public float FinalCost { get; }
-    public Origin Origin { get; }
+    public DateTime CreatedDateTime { get; }
+    public DateTime LastModifiedDateTime { get; }
+    public Origin Origin { get; set; }
     public Guid OriginId { get; }
-    public Destination Destination { get; }
+    public Destination Destination { get; set; }
     public Guid DestinationId { get; }
-    public float FinalPrice { get; set; }
+    public DateTime DepartureDateTime { get; }
+    public DateTime ArrivalDateTime { get; }
 
     public Booking
     (
         Guid id,
-        DateTime createdDateTime,
         float initialCost,
         float discount,
         float finalCost,
-        Trip Trip
+        DateTime createdDateTime,
+        DateTime lastModifiedDateTime,
+        Guid originId,
+        Guid destinationId,
+        DateTime departureDateTime,
+        DateTime arrivalDateTime
     )
     {
         //enforce variants
         Id = id;
-        CreatedDateTime = createdDateTime;
         InitialCost = initialCost;
         Discount = discount;
         FinalCost = finalCost;
-        Origin = Trip.Origin;
-        OriginId = Trip.Origin.Id;
-        Destination = Trip.Destination;
-        DestinationId = Trip.Destination.Id;
-
+        CreatedDateTime = createdDateTime;
+        LastModifiedDateTime = lastModifiedDateTime;
+        OriginId = originId;
+        DestinationId = destinationId;
+        DepartureDateTime = departureDateTime;
+        ArrivalDateTime = arrivalDateTime;
     }
 }

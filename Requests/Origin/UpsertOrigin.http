@@ -1,5 +1,6 @@
+@host = http://localhost:5032
 @id = 00000000-0000-0000-0000-000000000000
-PUT http://localhost:5032/Origin/{{id}}
+PUT {{host}}/Origin/{{id}}
 Content-Type: application/json
 
 {
