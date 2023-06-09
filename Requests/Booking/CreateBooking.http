@@ -6,8 +6,8 @@ Content-Type: application/json
   "InitialCost": 1234.3,
   "Discount": 20.4,
   "FinalCost": 1213.9,
-  "OriginId": "0755b5aa-9c3d-4978-9177-45dfbb6c3b20",
-  "DestinationId": "51b5c104-3d70-424a-9b62-9e6b5d9e0c6d",
+  "OriginId": "ee2705ba-1694-41d0-973b-a9829c41fdd9",
+  "DestinationId": "2544dfc0-edd0-4672-b2d7-db2a75d3ebba",
     "ArrivalDateTime": "2022-04-08T08:00:00",
   "DepartureDateTime": "2022-04-08T08:00:00"
 }

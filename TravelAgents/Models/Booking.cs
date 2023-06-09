@@ -1,3 +1,6 @@
+using TravelAgents.Services.Destinations;
+using TravelAgents.Services.Origins;
+
 namespace TravelAgents.Models;
 
 public class Booking
@@ -8,18 +11,21 @@ public class Booking
     public float FinalCost { get; }
     public DateTime CreatedDateTime { get; }
     public DateTime LastModifiedDateTime { get; }
-    public Origin Origin { get; set; }
+    public Origin Origin { get; }
     public Guid OriginId { get; }
-    public Destination Destination { get; set; }
+    public Destination Destination { get; }
     public Guid DestinationId { get; }
     public DateTime DepartureDateTime { get; }
     public DateTime ArrivalDateTime { get; }
 
     public Booking
     (
+        //TODO: confirm if sending the services to the api model's class is good code.
+        IOriginService _originService,
+        IDestinationService _destinationService,
         Guid id,
         float initialCost,
-        float discount,
+        float? discount,
         float finalCost,
         DateTime createdDateTime,
         DateTime lastModifiedDateTime,
@@ -32,13 +38,29 @@ public class Booking
         //enforce variants
         Id = id;
         InitialCost = initialCost;
-        Discount = discount;
+        Discount = discount ?? 0;
         FinalCost = finalCost;
         CreatedDateTime = createdDateTime;
         LastModifiedDateTime = lastModifiedDateTime;
         OriginId = originId;
+        Origin = _originService.GetOrigin(OriginId);
         DestinationId = destinationId;
+        Destination = _destinationService.GetDestination(DestinationId);
         DepartureDateTime = departureDateTime;
         ArrivalDateTime = arrivalDateTime;
     }
+
+    // public static Booking Create(
+    //     Guid id,
+    //     float initialCost,
+    //     float finalCost,
+    //     DateTime createdDateTime,
+    //     DateTime lastModifiedDateTime,
+    //     Guid originId,
+    //     Guid destinationId,
+    //     DateTime departureDateTime
+    //     )
+    // {
+    //     Origin origin = _originService.GetOrigin(originId);
+    // }
 }

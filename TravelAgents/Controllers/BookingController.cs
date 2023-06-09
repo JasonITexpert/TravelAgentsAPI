@@ -27,6 +27,8 @@ public class BookingController : ControllerBase
     public IActionResult CreateBooking(CreateBookingRequest request)
     {//request contract to api model
         var booking = new Booking(
+            _originService,
+            _destinationService,
             Guid.NewGuid(),
             request.InitialCost,
             request.Discount,
@@ -39,7 +41,7 @@ public class BookingController : ControllerBase
             request.ArrivalDateTime
         );
         //for testing purpose getting mapping booking obj origin using origin service
-        var origin = _originService.GetOrigin(booking.OriginId);
+        var origin = booking.Origin;
         var originResponse = new OriginResponse(
             origin.Id,
             origin.Country,
@@ -58,8 +60,6 @@ public class BookingController : ControllerBase
             destination.Description,
             destination.BasePrice);
 
-        booking.Origin = origin;
-        booking.Destination = destination;
         //TODO: PERSITENCE (save to db)
         _bookingService.CreateBooking(booking);
         //api model to response
@@ -124,6 +124,8 @@ public class BookingController : ControllerBase
         var booked = _bookingService.GetBooking(id);
         //request to api model
         var booking = new Booking(
+            _originService,
+            _destinationService,
             id,
             request.InitialCost,
             request.Discount,
