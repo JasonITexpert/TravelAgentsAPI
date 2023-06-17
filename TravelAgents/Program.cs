@@ -3,6 +3,7 @@ using TravelAgents.Services.Authentication;
 using TravelAgents.Services.Bookings;
 using TravelAgents.Services.Destinations;
 using TravelAgents.Services.Origins;
+using TravelAgents.Services.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddDbContext<TravelAgentsDbContext>(options =>
 
 });
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddSingleton<IBookingService, BookingService>();
 builder.Services.AddSingleton<IOriginService, OriginService>();
 builder.Services.AddSingleton<IDestinationService, DestinationService>();

@@ -26,15 +26,12 @@ public class BookingController : ControllerBase
     [HttpPost]
     public IActionResult CreateBooking(CreateBookingRequest request)
     {//request contract to api model
-        var booking = new Booking(
+        var booking = Booking.Create(
             _originService,
             _destinationService,
-            Guid.NewGuid(),
             request.InitialCost,
             request.Discount,
             request.FinalCost,
-            DateTime.UtcNow,
-            DateTime.UtcNow,
             request.OriginId,
             request.DestinationId,
             request.DepartureDateTime,
@@ -123,19 +120,18 @@ public class BookingController : ControllerBase
     {
         var booked = _bookingService.GetBooking(id);
         //request to api model
-        var booking = new Booking(
+        var booking = Booking.Create(
             _originService,
             _destinationService,
-            id,
             request.InitialCost,
             request.Discount,
             request.FinalCost,
-            booked.CreatedDateTime,
-            DateTime.UtcNow,
+            // booked.CreatedDateTime,
             request.OriginId,
             request.DestinationId,
             request.DepartureDateTime,
-            request.ArrivalDateTime
+            request.ArrivalDateTime,
+            id
         );
         _bookingService.UpsertBooking(id, booking);
         //Return 201 if a new breakfast was created.

@@ -18,7 +18,7 @@ public class Booking
     public DateTime DepartureDateTime { get; }
     public DateTime ArrivalDateTime { get; }
 
-    public Booking
+    private Booking
     (
         //TODO: confirm if sending the services to the api model's class is good code.
         IOriginService _originService,
@@ -50,17 +50,32 @@ public class Booking
         ArrivalDateTime = arrivalDateTime;
     }
 
-    // public static Booking Create(
-    //     Guid id,
-    //     float initialCost,
-    //     float finalCost,
-    //     DateTime createdDateTime,
-    //     DateTime lastModifiedDateTime,
-    //     Guid originId,
-    //     Guid destinationId,
-    //     DateTime departureDateTime
-    //     )
-    // {
-    //     Origin origin = _originService.GetOrigin(originId);
-    // }
+    public static Booking Create(
+        IOriginService _originService,
+        IDestinationService _destinationService,
+        float initialCost,
+        float discount,
+        float finalCost,
+        Guid originId,
+        Guid destinationId,
+        DateTime departureDateTime,
+        DateTime arrivalDateTime,
+        Guid? id = null
+        )
+    {
+        return new Booking(
+            _originService,
+            _destinationService,
+            Guid.NewGuid(),
+            initialCost,
+            discount,
+            finalCost,
+            DateTime.UtcNow,
+            DateTime.UtcNow,
+            originId,
+            destinationId,
+            departureDateTime,
+            arrivalDateTime
+        );
+    }
 }

@@ -70,3 +70,4 @@ C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\Debug\net7.0\ref\TravelAgents.dll
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\BCrypt.Net-Next.dll

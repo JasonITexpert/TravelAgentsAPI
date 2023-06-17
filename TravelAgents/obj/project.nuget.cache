@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3GYy7dK/NAumY+nJdWv9GdvaoO1o6Xc9ADcZ1O51ChmmWlmAZyb3sFG6aVxIsgWBiZVtZ/3bhcZgstyoncAevQ==",
+  "dgSpecHash": "BzuqnC0jO6g0EdQ6CnJDOxvJkvNsx6UOpmJw/vGfJ6jBcStSzjq6zZTDbeOXUvMYKIoEljja/rpT/RNNas6F4g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents\\TravelAgents.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Jason Asare\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
