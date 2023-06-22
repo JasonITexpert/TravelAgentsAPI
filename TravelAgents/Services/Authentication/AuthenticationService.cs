@@ -4,17 +4,41 @@ namespace TravelAgents.Services.Authentication;
 
 public class AuthenticationService : IAuthenticationService
 {
+    private readonly IJwtTokenGenerator _jwtTokenGenerator;
+
+    public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator)
+    {
+        _jwtTokenGenerator = jwtTokenGenerator;
+    }
+
     private static List<User> _users = new();
     public AuthenticationResult Register(string username, string firstName, string lastName, string email, string password, DateOnly DateOfBirth)
     {
+        //Check if user already exists
+        bool userExists;
+        var existingUser = _users.Find(user => user.Email == email);
+        if (existingUser != null)
+        {
+            userExists = true;
+            return null;
+        }
+
+        //Create User 
+
+
+        //Generate Token
+        Guid userId = Guid.NewGuid();
+        string token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
         //Todo : hash password
         string passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
+
         AuthenticationResult authResult = new AuthenticationResult(
-           Guid.NewGuid(),
+           userId,
            username,
            firstName,
            lastName,
-           email
+           email,
+           token
            );
 
         User user = new User(
@@ -22,6 +46,7 @@ public class AuthenticationService : IAuthenticationService
             authResult.Username,
             authResult.FirstName,
             authResult.LastName,
+            authResult.Email,
             passwordHash,
             DateTime.UtcNow,
             DateTime.UtcNow,
@@ -44,7 +69,8 @@ public class AuthenticationService : IAuthenticationService
                 user.Username,
                 user.FirstName,
                 user.LastName,
-                user.Email);
+                user.Email,
+                "token");
             return authResult;
         }
         return null;

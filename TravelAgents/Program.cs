@@ -7,16 +7,18 @@ using TravelAgents.Services.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddDbContext<TravelAgentsDbContext>(options =>
 {
-
-});
-builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddSingleton<IBookingService, BookingService>();
-builder.Services.AddSingleton<IOriginService, OriginService>();
-builder.Services.AddSingleton<IDestinationService, DestinationService>();
+    builder.Services.AddControllers();
+    builder.Services.AddDbContext<TravelAgentsDbContext>(options =>
+    {
+    });
+    builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+    builder.Services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+    builder.Services.AddScoped<IUserService, UserService>();
+    builder.Services.AddSingleton<IBookingService, BookingService>();
+    builder.Services.AddSingleton<IOriginService, OriginService>();
+    builder.Services.AddSingleton<IDestinationService, DestinationService>();
+}
 //Uncomment code belown and the other commented code to enable swagger
 // builder.Services.AddEndpointsApiExplorer();
 // builder.Services.AddSwaggerGen();

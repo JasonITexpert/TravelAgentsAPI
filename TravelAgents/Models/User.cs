@@ -5,8 +5,8 @@ public class User
     public Guid Id { get; }
     public string Username { get; }
     public string FirstName { get; }
-    public string Email { get; }
     public string LastName { get; }
+    public string Email { get; }
     public string PasswordHash { get; }
     public DateTime CreatedDateTime { get; }
     public DateTime LastDateModifiedDateTime { get; }
@@ -17,6 +17,7 @@ public class User
         string userName,
         string firstName,
         string lastName,
+        string email,
         string passwordHash,
         DateTime createdDateTime,
         DateTime lastModifiedDateTime,
@@ -27,6 +28,7 @@ public class User
         Username = userName;
         FirstName = firstName;
         LastName = lastName;
+        Email = email;
         PasswordHash = passwordHash;
         CreatedDateTime = createdDateTime;
         LastDateModifiedDateTime = lastModifiedDateTime;

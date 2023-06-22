@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TravelAgents.Contracts;
 using TravelAgents.Contracts.Origin;
@@ -8,6 +9,7 @@ namespace TravelAgents.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+// [Authorize(Roles = "Admin")]
 public class OriginController : ControllerBase
 {
     private readonly IOriginService _originService;

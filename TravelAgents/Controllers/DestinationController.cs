@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TravelAgents.Contracts.Destination;
 using TravelAgents.Models;
@@ -7,6 +8,7 @@ namespace TravelAgents.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+// [Authorize(Roles = "Admin")]
 public class DestinationController : ControllerBase
 {
     private readonly IDestinationService _destinationService;
