@@ -24,11 +24,10 @@ public class AuthenticationService : IAuthenticationService
         }
 
         //Create User 
-
-
         //Generate Token
         Guid userId = Guid.NewGuid();
-        string token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
+        var token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
+        // string token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
         //Todo : hash password
         string passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
 
@@ -38,8 +37,7 @@ public class AuthenticationService : IAuthenticationService
            firstName,
            lastName,
            email,
-           token
-           );
+           token);
 
         User user = new User(
             authResult.Id,
@@ -64,13 +62,14 @@ public class AuthenticationService : IAuthenticationService
         var user = _users.Find(user => user.Username == userName);
         if (BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
         {
+            var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName);
             var authResult = new AuthenticationResult(
                 user.Id,
                 user.Username,
                 user.FirstName,
                 user.LastName,
                 user.Email,
-                "token");
+                token);
             return authResult;
         }
         return null;

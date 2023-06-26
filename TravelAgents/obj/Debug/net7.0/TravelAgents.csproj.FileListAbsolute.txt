@@ -71,3 +71,8 @@ C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\obj\
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

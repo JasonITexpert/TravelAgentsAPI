@@ -36,7 +36,8 @@ public class AuthenticationController : ControllerBase
             authResult.Username,
             authResult.FirstName,
             authResult.LastName,
-            authResult.Email);
+            authResult.Email,
+            null);
         return Ok(response);
     }
 
@@ -52,7 +53,8 @@ public class AuthenticationController : ControllerBase
             authResult.Username,
             authResult.FirstName,
             authResult.LastName,
-            authResult.Email);
+            authResult.Email,
+            authResult.token);
         return Ok(response);
     }
 }
