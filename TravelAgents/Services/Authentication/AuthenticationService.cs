@@ -26,9 +26,7 @@ public class AuthenticationService : IAuthenticationService
         //Create User 
         //Generate Token
         Guid userId = Guid.NewGuid();
-        var token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
-        // string token = _jwtTokenGenerator.GenerateToken(userId, firstName, lastName);
-        //Todo : hash password
+        // hash password
         string passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
 
         AuthenticationResult authResult = new AuthenticationResult(
@@ -37,7 +35,7 @@ public class AuthenticationService : IAuthenticationService
            firstName,
            lastName,
            email,
-           token);
+           null);
 
         User user = new User(
             authResult.Id,

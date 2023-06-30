@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using TravelAgents.Persistence;
 using TravelAgents.Services.Authentication;
 using TravelAgents.Services.Bookings;
@@ -9,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 {
     builder.Services.AddControllers();
+    builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection(JwtSettings.sectionName));
     builder.Services.AddDbContext<TravelAgentsDbContext>(options =>
     {
     });
