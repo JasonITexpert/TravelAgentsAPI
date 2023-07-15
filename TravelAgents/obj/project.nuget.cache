@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1IH3mdYuMCSbTG2lU73vr/Chr3iw8CG7mM5MZcnvukg/6TCH7BOmvRzQCoRooT9iDVyz8pVGDYG2w+hITtEDhg==",
+  "dgSpecHash": "Lg/Znxs7BrE4MmwjPLm3QT1txCD+li/fkZe5qyQ0mH7UuE3G3wxHrEHN2Kto+ijgi3izf7W70s+NJQatRVcMiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jason Asare\\Desktop\\Projects\\local_repos\\TravelAgents\\TravelAgents\\TravelAgents.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jason Asare\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.9\\microsoft.aspnetcore.authentication.jwtbearer.7.0.9.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
@@ -24,6 +25,8 @@
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.31.0\\microsoft.identitymodel.abstractions.6.31.0.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.31.0\\microsoft.identitymodel.jsonwebtokens.6.31.0.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.identitymodel.logging\\6.31.0\\microsoft.identitymodel.logging.6.31.0.nupkg.sha512",
+    "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.15.1\\microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.15.1\\microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.31.0\\microsoft.identitymodel.tokens.6.31.0.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Jason Asare\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

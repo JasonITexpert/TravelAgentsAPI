@@ -76,3 +76,6 @@ C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Jason Asare\Desktop\Projects\local_repos\TravelAgents\TravelAgents\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

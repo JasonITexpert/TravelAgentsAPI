@@ -17,7 +17,7 @@ public class AuthenticationService : IAuthenticationService
         //Check if user already exists
         bool userExists;
         var existingUser = _users.Find(user => user.Email == email);
-        if (existingUser != null)
+        if (existingUser is not null)
         {
             userExists = true;
             return null;
@@ -56,7 +56,7 @@ public class AuthenticationService : IAuthenticationService
 
     public AuthenticationResult Login(string userName, string password)
     {
-        //for testing purposes, to be replace by entity framework ORM
+        //for testing purposes, to be replaced by entity framework ORM
         var user = _users.Find(user => user.Username == userName);
         if (BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
         {

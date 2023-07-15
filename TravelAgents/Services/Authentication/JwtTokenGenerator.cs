@@ -27,7 +27,8 @@ public class JwtTokenGenerator : IJwtTokenGenerator
             new Claim(JwtRegisteredClaimNames.GivenName, firstName),
             new Claim(JwtRegisteredClaimNames.FamilyName, lastName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        };
+            new Claim(ClaimTypes.Role , "Admin")
+    };
 
         var securityToken = new JwtSecurityToken(
             issuer: _jwtSettings.Issuer,
