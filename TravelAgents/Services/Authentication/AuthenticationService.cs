@@ -43,6 +43,7 @@ public class AuthenticationService : IAuthenticationService
             authResult.FirstName,
             authResult.LastName,
             authResult.Email,
+            null,
             passwordHash,
             DateTime.UtcNow,
             DateTime.UtcNow,

@@ -12,7 +12,7 @@ namespace TravelAgents.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-// [Authorize(Roles = "Admin")]
+[Authorize(Roles = "User")]
 public class BookingController : ControllerBase
 {
     private readonly IBookingService _bookingService;

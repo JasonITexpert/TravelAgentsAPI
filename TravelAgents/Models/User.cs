@@ -7,6 +7,7 @@ public class User
     public string FirstName { get; }
     public string LastName { get; }
     public string Email { get; }
+    public string Role { get; }
     public string PasswordHash { get; }
     public DateTime CreatedDateTime { get; }
     public DateTime LastDateModifiedDateTime { get; }
@@ -18,6 +19,7 @@ public class User
         string firstName,
         string lastName,
         string email,
+        string role,
         string passwordHash,
         DateTime createdDateTime,
         DateTime lastModifiedDateTime,
@@ -29,6 +31,7 @@ public class User
         FirstName = firstName;
         LastName = lastName;
         Email = email;
+        Role = role;
         PasswordHash = passwordHash;
         CreatedDateTime = createdDateTime;
         LastDateModifiedDateTime = lastModifiedDateTime;
