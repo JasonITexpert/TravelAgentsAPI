@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace TravelAgents.Controllers;
 
 [Route("[controller]")]
-[Authorize(Roles = "Admin")]
+[Authorize(Roles = "User")]
 public class TestController : ControllerBase
 {
     public IActionResult GetString()

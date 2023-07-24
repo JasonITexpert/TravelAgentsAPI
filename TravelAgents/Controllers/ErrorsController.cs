@@ -10,5 +10,4 @@ public class ErrorsController : ControllerBase
     {
         return Problem();
     }
-
 }

@@ -1,5 +1,7 @@
+using ErrorOr;
 using TravelAgents.Contracts.Origin;
 using TravelAgents.Models;
+using TravelAgents.ServiceErrors;
 
 namespace TravelAgents.Services.Origins;
 
@@ -17,9 +19,13 @@ public class OriginService : IOriginService
         _origins.Remove(id);
     }
 
-    public Origin GetOrigin(Guid id)
+    public ErrorOr<Origin> GetOrigin(Guid id)
     {
-        return _origins[id];
+        if (_origins.TryGetValue(id, out var origin))
+        {
+            return origin;
+        }
+        return Errors.Origin.NotFound;
     }
 
     public void UpsertOrigin(Guid id, Origin request)

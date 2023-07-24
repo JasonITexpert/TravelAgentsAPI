@@ -35,19 +35,19 @@ public class Booking
         DateTime arrivalDateTime
     )
     {
-        //enforce variants
-        Id = id;
-        InitialCost = initialCost;
-        Discount = discount ?? 0;
-        FinalCost = finalCost;
-        CreatedDateTime = createdDateTime;
-        LastModifiedDateTime = lastModifiedDateTime;
-        OriginId = originId;
-        Origin = _originService.GetOrigin(OriginId);
-        DestinationId = destinationId;
-        Destination = _destinationService.GetDestination(DestinationId);
-        DepartureDateTime = departureDateTime;
-        ArrivalDateTime = arrivalDateTime;
+        // enforce variants
+        // Id = id;
+        // InitialCost = initialCost;
+        // Discount = discount ?? 0;
+        // FinalCost = finalCost;
+        // CreatedDateTime = createdDateTime;
+        // LastModifiedDateTime = lastModifiedDateTime;
+        // OriginId = originId;
+        // Origin = _originService.GetOrigin(OriginId);
+        // DestinationId = destinationId;
+        // Destination = _destinationService.GetDestination(DestinationId);
+        // DepartureDateTime = departureDateTime;
+        // ArrivalDateTime = arrivalDateTime;
     }
 
     public static Booking Create(

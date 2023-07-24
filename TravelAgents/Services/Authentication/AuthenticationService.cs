@@ -4,6 +4,7 @@ namespace TravelAgents.Services.Authentication;
 
 public class AuthenticationService : IAuthenticationService
 {
+    private const string Role = "User";
     private readonly IJwtTokenGenerator _jwtTokenGenerator;
 
     public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator)
@@ -43,7 +44,7 @@ public class AuthenticationService : IAuthenticationService
             authResult.FirstName,
             authResult.LastName,
             authResult.Email,
-            null,
+            Role,
             passwordHash,
             DateTime.UtcNow,
             DateTime.UtcNow,
@@ -61,7 +62,7 @@ public class AuthenticationService : IAuthenticationService
         var user = _users.Find(user => user.Username == userName);
         if (BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
         {
-            var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName);
+            var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FirstName, user.LastName, user.Role);
             var authResult = new AuthenticationResult(
                 user.Id,
                 user.Username,

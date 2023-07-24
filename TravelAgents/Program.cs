@@ -13,7 +13,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 {
     builder.Services.AddControllers();
-
     builder.Services.AddDbContext<TravelAgentsDbContext>(options =>
     {
     });
@@ -21,11 +20,13 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
 
     var jwtSettings = new JwtSettings();
-    builder.Configuration.Bind(JwtSettings.sectionName, jwtSettings);
+    builder.Configuration.Bind(JwtSettings.sectionName, jwtSettings);//bind JwtSettings to variable
     builder.Services.AddSingleton(Options.Create(jwtSettings));
+
     builder.Services.AddAuthentication(defaultScheme: JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters()
+    .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters() //token parameters to validate
     {
+        //token parameters to validate
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidateLifetime = true,
@@ -47,16 +48,17 @@ var builder = WebApplication.CreateBuilder(args);
 // builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
-//Uncomment code 
-// if (app.Environment.IsDevelopment())
-// {
-//     app.UseSwagger();
-//     app.UseSwaggerUI();
-// }
-app.UseExceptionHandler("/error");
-app.UseHttpsRedirection();
-app.MapControllers();
-app.UseAuthentication();
-app.UseAuthorization();
-app.Run();
+{
+    //Uncomment code 
+    // if (app.Environment.IsDevelopment())
+    // {
+    //     app.UseSwagger();
+    //     app.UseSwaggerUI();
+    // }
+    app.UseExceptionHandler("/error");
+    app.UseHttpsRedirection();
+    app.MapControllers();
+    app.UseAuthentication();
+    app.UseAuthorization();
+    app.Run();
+}

@@ -1,8 +1,10 @@
+using ErrorOr;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TravelAgents.Contracts;
 using TravelAgents.Contracts.Origin;
 using TravelAgents.Models;
+using TravelAgents.ServiceErrors;
 using TravelAgents.Services.Origins;
 
 namespace TravelAgents.Controllers;
@@ -49,7 +51,12 @@ public class OriginController : ControllerBase
     [HttpGet("{id:guid}")]
     public IActionResult GetOrigin(Guid id)
     {
-        var origin = _originService.GetOrigin(id);
+        ErrorOr<Origin> getOriginResult = _originService.GetOrigin(id);
+        if (getOriginResult.IsError && getOriginResult.FirstError == Errors.Origin.NotFound)
+        {
+            return NotFound();
+        }
+        var origin = getOriginResult.Value;
         //api model to response
         var response = new OriginResponse(
             origin.Id,
@@ -66,13 +73,13 @@ public class OriginController : ControllerBase
     {
         var currentOrigin = _originService.GetOrigin(id);
         //request to api model
-        var origin = new Origin(
-            id,
-            request.Country,
-            request.City,
-            request.Price,
-            currentOrigin.CreatedDateTime,
-            DateTime.UtcNow);
+        // var origin = new Origin(
+        //     id,
+        //     request.Country,
+        //     request.City,
+        //     request.Price,
+        //     currentOrigin.CreatedDateTime,
+        //     DateTime.UtcNow);
         return Ok(request);
     }
 

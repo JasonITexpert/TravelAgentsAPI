@@ -83,38 +83,39 @@ public class BookingController : ControllerBase
     public IActionResult GetBooking(Guid id)
     {
 
-        var booking = _bookingService.GetBooking(id);
-        //for testing purpose getting mapping booking obj origin using origin service
-        var origin = _originService.GetOrigin(booking.OriginId);
-        var originResponse = new OriginResponse(
-            origin.Id,
-            origin.Country,
-            origin.City,
-            origin.Price,
-            origin.CreatedDateTime,
-            origin.LastModifiedDateTime);
+        // var booking = _bookingService.GetBooking(id);
+        // //for testing purpose getting mapping booking obj origin using origin service
+        // var origin = _originService.GetOrigin(booking.OriginId);
+        // var originResponse = new OriginResponse(
+        //     origin.Id,
+        //     origin.Country,
+        //     origin.City,
+        //     origin.Price,
+        //     origin.CreatedDateTime,
+        //     origin.LastModifiedDateTime);
 
-        //for testing purpose getting mapping booking obj origin using origin service
-        var destination = _destinationService.GetDestination(booking.DestinationId);
-        var destinationResponse = new DestinationResponse(
-            destination.Id,
-            destination.City,
-            destination.Country,
-            destination.Rating,
-            destination.Description,
-            destination.BasePrice);
-        //api model to response 
-        var response = new BookingResponse(
-            booking.Id,
-            booking.FinalCost,
-            originResponse,
-            destinationResponse,
-            booking.CreatedDateTime,
-            DateTime.UtcNow,
-            booking.DepartureDateTime,
-            booking.ArrivalDateTime
-        );
-        return Ok(response);
+        // //for testing purpose getting mapping booking obj origin using origin service
+        // var destination = _destinationService.GetDestination(booking.DestinationId);
+        // var destinationResponse = new DestinationResponse(
+        //     destination.Id,
+        //     destination.City,
+        //     destination.Country,
+        //     destination.Rating,
+        //     destination.Description,
+        //     destination.BasePrice);
+        // //api model to response 
+        // var response = new BookingResponse(
+        //     booking.Id,
+        //     booking.FinalCost,
+        //     originResponse,
+        //     destinationResponse,
+        //     booking.CreatedDateTime,
+        //     DateTime.UtcNow,
+        //     booking.DepartureDateTime,
+        //     booking.ArrivalDateTime
+        // );
+        // return Ok(response);
+        return Ok();
     }
 
     [HttpPut("{id:guid}")]
