@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TravelAgents.Controllers;
 
-[Route("[controller]")]
+
 [Authorize(Roles = "User")]
 public class TestController : ControllerBase
 {

@@ -10,10 +10,9 @@ using TravelAgents.Services.Origins;
 
 namespace TravelAgents.Controllers;
 
-[ApiController]
-[Route("[controller]")]
+
 [Authorize(Roles = "User")]
-public class BookingController : ControllerBase
+public class BookingController : ApiController
 {
     private readonly IBookingService _bookingService;
     private readonly IOriginService _originService;

@@ -6,10 +6,10 @@ using TravelAgents.Services.Destinations;
 
 namespace TravelAgents.Controllers;
 
-[ApiController]
+
 [Route("[controller]")]
 // [Authorize(Roles = "Admin")]
-public class DestinationController : ControllerBase
+public class DestinationController : ApiController
 {
     private readonly IDestinationService _destinationService;
     public DestinationController(IDestinationService destinationService)

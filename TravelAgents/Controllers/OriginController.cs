@@ -9,10 +9,9 @@ using TravelAgents.Services.Origins;
 
 namespace TravelAgents.Controllers;
 
-[ApiController]
-[Route("[controller]")]
+
 // [Authorize(Roles = "Admin")]
-public class OriginController : ControllerBase
+public class OriginController : ApiController
 {
     private readonly IOriginService _originService;
     public OriginController(IOriginService originService)
@@ -52,20 +51,29 @@ public class OriginController : ControllerBase
     public IActionResult GetOrigin(Guid id)
     {
         ErrorOr<Origin> getOriginResult = _originService.GetOrigin(id);
-        if (getOriginResult.IsError && getOriginResult.FirstError == Errors.Origin.NotFound)
-        {
-            return NotFound();
-        }
-        var origin = getOriginResult.Value;
+        return getOriginResult.Match(//return appropriate response
+            origin => Ok(MapOriginResponse(origin)),
+            errors => Problem(errors)
+        );
+        // if (getOriginResult.IsError && getOriginResult.FirstError == Errors.Origin.NotFound)
+        // {
+        //     return NotFound();
+        // }
+        // var origin = getOriginResult.Value;
         //api model to response
-        var response = new OriginResponse(
-            origin.Id,
-            origin.Country,
-            origin.City,
-            origin.Price,
-            origin.CreatedDateTime,
-            origin.LastModifiedDateTime);
-        return Ok(response);
+        // OriginResponse response = MapOriginResponse(origin); 
+        // return Ok(response);
+    }
+
+    private static OriginResponse MapOriginResponse(Origin origin)
+    {// map origin obj to origin response
+        return new OriginResponse(
+                    origin.Id,
+                    origin.Country,
+                    origin.City,
+                    origin.Price,
+                    origin.CreatedDateTime,
+                    origin.LastModifiedDateTime);
     }
 
     [HttpPut("{id:guid}")]
