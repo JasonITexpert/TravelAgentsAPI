@@ -13,7 +13,13 @@ public class AuthenticationService : IAuthenticationService
     }
 
     private static List<User> _users = new();
-    public AuthenticationResult Register(string username, string firstName, string lastName, string email, string password, DateOnly DateOfBirth)
+    public AuthenticationResult Register(
+        string username,
+        string firstName,
+        string lastName,
+        string email,
+        string password,
+        DateOnly DateOfBirth)
     {
         //Check if user already exists
         bool userExists;
